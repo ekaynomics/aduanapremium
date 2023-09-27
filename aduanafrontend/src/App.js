@@ -38,11 +38,13 @@ function App() {
           <p>DROPDOWN HERE!!!</p>
         </div>
       </div>
+
       <div className="ourServices">
         <div className="serviceDesc">
           <p className="serviceTitle"> OUR SERVICES</p>
           <p className="serviceTitle2">WHAT WE CAN DO FOR YOU</p>
         </div>
+
         <div>
           <div className="serviceCard">
             <div>icon</div>
@@ -88,13 +90,16 @@ function App() {
           </div>
         </div>
       </div>
+
       <div className="ourClients">
-        <div>
+        <div className="clientDesc">
           <p className="serviceTitle"> OUR CLIENTS</p>
           <p className="serviceTitle2">CLIENTS THAT TRUST OUR SERVICES</p>
         </div>
-        <div className="clientCard"> I owe my success</div>
-        <div className="clientCard"> Successful people....</div>
+        <div className="clientPad">
+          <div className="clientCard"> I owe my success</div>
+          <div className="clientCard"> Successful people....</div>
+        </div>
         <div className="clientLogos">
           <div>LOGO1</div>
           <div>LOGO2</div>
@@ -110,30 +115,30 @@ function App() {
             <p className="serviceTitle"> OUR CORE VALUES</p>
             <p className="serviceTitle2">OUR SKILLS AND EXPERTISE</p>
           </div>
-          <div>
+          <div className="valuesCard">
             <p>Values PARAGRAPH</p>
           </div>
-          <div>VALUES PHOTOGRAPH</div>
+          <div className="valuesCard">VALUES PHOTOGRAPH</div>
         </div>
         <div className="valuesBottomDiv">
           <div className="valuesStatsCard">
-            <h4>1,273</h4>
-            <h6>Delivered Packages</h6>
+            <h4 className="valueTitle">1,273</h4>
+            <h6 className="valueSubTitle">DELIVERED PACKAGES</h6>
             <p>random paragpraph text and stuff. Make it make sense</p>
           </div>
           <div className="valuesStatsCard">
-            <h4>473,793</h4>
-            <h6>KM per Year</h6>
+            <h4 className="valueTitle">473,793</h4>
+            <h6 className="valueSubTitle">KM PER Year</h6>
             <p>random paragpraph text and stuff. Make it make sense</p>
           </div>
           <div className="valuesStatsCard">
-            <h4>3,279</h4>
-            <h6>Tons of Goods</h6>
+            <h4 className="valueTitle">3,279</h4>
+            <h6 className="valueSubTitle">TONS OF GOODS</h6>
             <p>random paragpraph text and stuff. Make it make sense</p>
           </div>
           <div className="valuesStatsCard">
-            <h4>513</h4>
-            <h6>Satisfied Clients</h6>
+            <h4 className="valueTitle">513</h4>
+            <h6 className="valueSubTitle">SATISFIED CLIENTS</h6>
             <p>random paragpraph text and stuff. Make it make sense</p>
           </div>
         </div>

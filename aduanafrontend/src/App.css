@@ -94,10 +94,11 @@ body {
 }
 
 .ourServices {
-  background-color: grey;
+  background-color: white;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  padding: 2%;
 }
 
 .serviceDesc {
@@ -129,7 +130,7 @@ body {
   width: 80%;
   margin: 0 10%;
   height: 200px;
-  border: 3px solid black;
+  border: 0.7px solid grey;
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -140,24 +141,40 @@ body {
   text-align: left;
 }
 .ourClients {
-  background-color: yellow;
+  background-color: #0b60a9;
   display: grid;
   font-size: 16px;
+  color: white;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr;
 }
 
-.ourClients > div {
+.clientDesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  font-size: 16px;
+  width: 100%;
   padding: 20px;
+  margin-left: 0;
+  box-sizing: border-box;
+}
+
+.clientPad {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .clientCard {
-  padding: 10px;
-  border-radius: 15px;
-  width: 100%;
+  margin: 10px;
+  border-radius: 5px;
+  width: 80%;
   height: 200px;
-  border: 3px dotted red;
-  text-align: center;
+  border: 1px solid #155794;
+  background-color: #155794;
 }
 
 .clientLogos {
@@ -169,7 +186,7 @@ body {
 }
 
 .ourValues {
-  background-color: aqua;
+  background-color: white;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
@@ -181,6 +198,21 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  text-align: center;
+}
+
+.valueTitle {
+  font-size: 50px;
+  padding: 10px 0;
+  margin: 0;
+  color: #155794;
+}
+
+.valueSubTitle {
+  font-size: 15px;
+  padding: 0;
+  margin: 0 0px 0 0;
+  color: grey;
 }
 
 .cargoNumbers {
@@ -283,7 +315,7 @@ body {
   }
 
   .ourServices {
-    background-color: grey;
+    background-color: white;
     display: flex;
     flex-direction: row;
   }
@@ -317,14 +349,91 @@ body {
     width: 80%;
     margin: 0 10%;
     height: 200px;
-    border: 3px solid black;
+    border: 0.7px solid grey;
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
+
   .serviceText {
     width: 70%;
     text-align: left;
+  }
+  .ourClients {
+    background-color: #0b60a9;
+    display: grid;
+    font-size: 16px;
+    color: white;
+    grid-template-columns: 0.6fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
+
+    grid-template-areas:
+      "desc pad"
+      "logoz logoz";
+  }
+
+  .clientDesc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-size: 16px;
+    width: 100%;
+    padding: 20px;
+    margin-left: 0;
+    box-sizing: border-box;
+    grid-area: desc;
+  }
+
+  .clientPad {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-area: pad;
+  }
+
+  .clientCard {
+    margin: 10px;
+    border-radius: 5px;
+    width: 80%;
+    height: 200px;
+    border: 1px solid #155794;
+    background-color: #155794;
+  }
+
+  .clientLogos {
+    border: 3px dotted red;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-area: logoz;
+  }
+
+  .ourValues {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 20px;
+  }
+
+  .ourValues > div {
+    padding-left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+  .valuesCard {
+    margin: 10px;
+    border-radius: 5px;
+    width: 80%;
+    height: 200px;
+    border: 1px solid white;
+    background-color: white;
   }
 }
