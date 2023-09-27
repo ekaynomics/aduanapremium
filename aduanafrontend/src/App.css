@@ -1,0 +1,283 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  overflow-x: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  overflow-x: clip;
+}
+
+body {
+  overflow-x: clip;
+}
+
+.container {
+  display: grid;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: red;
+  background: url(./images/Aduana\ Premium\ Plane.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-size: large;
+  height: 80vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 0.4fr 0.4fr;
+  grid-template-areas:
+    "none"
+    "none"
+    "mainText"
+    "buttonDiv"
+    "buttonDiv";
+}
+
+.mainText {
+  width: 100vw;
+  grid-area: mainText;
+}
+
+.mainText > p {
+  width: 100%;
+}
+
+.getQuote {
+  background-color: #0b60a9;
+  color: white;
+  height: 40px;
+  width: 200px;
+  margin: 1%;
+  border: none;
+  border-radius: 3%;
+}
+.findOut {
+  background-color: #686d7a;
+  color: white;
+  height: 40px;
+  width: 180px;
+  margin: 1%;
+  border: none;
+  border-radius: 3%;
+}
+
+.main > div {
+  margin-left: 5%;
+  width: 80%;
+}
+
+.buttonDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  grid-area: buttonDiv;
+}
+
+.details {
+  display: grid;
+  background-color: #084274;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.details > div {
+  color: white;
+  padding: 2%;
+  border: 3px dotted blue;
+}
+
+.ourServices {
+  background-color: grey;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.serviceDesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  font-size: 16px;
+  width: 100%;
+  padding: 20px;
+  margin-left: 0;
+  box-sizing: border-box;
+}
+
+.serviceTitle {
+  text-align: right;
+  margin-top: 30px;
+  font-size: 20px;
+}
+.serviceTitle2 {
+  text-align: right;
+  margin: 0;
+  font-size: 50px;
+}
+
+.serviceCard {
+  padding: 10px;
+  border-radius: 15px;
+  width: 80%;
+  margin: 0 10%;
+  height: 200px;
+  border: 3px solid black;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.serviceText {
+  width: 70%;
+}
+.ourClients {
+  background-color: yellow;
+  display: grid;
+  font-size: 16px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.ourClients > div {
+  padding: 20px;
+}
+
+.clientCard {
+  padding: 10px;
+  border-radius: 15px;
+  width: 100%;
+  height: 200px;
+  border: 3px dotted red;
+  text-align: center;
+}
+
+.clientLogos {
+  border: 3px dotted red;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.ourValues {
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 20px;
+}
+
+.ourValues > div {
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.cargoNumbers {
+  background-color: greenyellow;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 20px;
+}
+
+.cargoNumbers > div {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.map {
+  background-color: blueviolet;
+}
+
+.footer {
+  background-color: #084274;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.footer > div {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.contactFAQ {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 20%;
+}
+
+@media (min-width: 800px) {
+  .main {
+    background-color: red;
+    background: url(./images/Aduana\ Premium\ Plane.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: large;
+    height: 80vh;
+    padding-top: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .mainText {
+    padding: none;
+  }
+  .getQuote {
+    background-color: #0b60a9;
+    color: white;
+    height: 40px;
+    width: 200px;
+    margin: 1%;
+    border: none;
+    border-radius: 3%;
+  }
+  .findOut {
+    background-color: #686d7a;
+    color: white;
+    height: 40px;
+    width: 180px;
+    margin: 1%;
+    border: none;
+    border-radius: 3%;
+  }
+
+  .buttonDiv {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-left: none;
+  }
+
+  .details {
+    display: flex;
+    background-color: #084274;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .details > div {
+    color: white;
+    padding: 2%;
+    border: 3px dotted blue;
+  }
+}
