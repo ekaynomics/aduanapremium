@@ -43,19 +43,50 @@ function App() {
           <p className="serviceTitle"> OUR SERVICES</p>
           <p className="serviceTitle2">WHAT WE CAN DO FOR YOU</p>
         </div>
-        <div className="serviceCard">
-          <div>icon</div>
-          <div className="serviceText">
-            <p>OCEAN CARGO</p>
-            <p>
-              Praesent eu rhoncus nibh. Quisque tincidunt, nisi in venenatis
-              commodo, neque quam pharetra dolor, nec lacinia urna quam.
-            </p>
+        <div>
+          <div className="serviceCard">
+            <div>icon</div>
+            <div className="serviceText">
+              <p>OCEAN CARGO</p>
+              <p>
+                Praesent eu rhoncus nibh. Quisque tincidunt, nisi in venenatis
+                commodo, neque quam pharetra dolor, nec lacinia urna quam.
+              </p>
+            </div>
+          </div>
+          <div className="serviceCard">
+            <div> icon </div>
+            <div className="serviceText">
+              <p>FLY ANYWHERE</p>
+              <p>
+                Praesent eu rhoncus nibh. Quisque tincidunt, nisi in venenatis
+                commodo, neque quam pharetra dolor, nec lacinia urna quam.
+              </p>
+            </div>
           </div>
         </div>
-        <div className="serviceCard"> FLY ANYWHERE</div>
-        <div className="serviceCard"> PROFESSIONAL COURIER SERVICES</div>
-        <div className="serviceCard"> CARGO STORAGE</div>
+        <div>
+          <div className="serviceCard">
+            <div> icon </div>
+            <div className="serviceText">
+              <p>PROFESSIONAL COURIER SERVICES</p>
+              <p>
+                Praesent eu rhoncus nibh. Quisque tincidunt, nisi in venenatis
+                commodo, neque quam pharetra dolor, nec lacinia urna quam.
+              </p>
+            </div>
+          </div>
+          <div className="serviceCard">
+            <div>icon</div>
+            <div className="serviceText">
+              <p>CARGO STORAGE</p>
+              <p>
+                Praesent eu rhoncus nibh. Quisque tincidunt, nisi in venenatis
+                commodo, neque quam pharetra dolor, nec lacinia urna quam.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="ourClients">
         <div>
