@@ -21,7 +21,6 @@ body {
 }
 
 .main {
-  background-color: red;
   background: url(./images/Aduana\ Premium\ Plane.jpeg) no-repeat;
   background-size: cover;
   background-position: center;
@@ -31,13 +30,70 @@ body {
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 0.4fr 0.4fr;
+  grid-template-rows: 0.3fr 1fr 1fr 0.4fr 0.4fr;
   grid-template-areas:
-    "none"
+    "nav"
     "none"
     "mainText"
     "buttonDiv"
     "buttonDiv";
+}
+
+nav {
+  width: 100vw;
+  text-align: right;
+  border: 1px dotted blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-area: nav;
+  padding: 15px 30px;
+}
+
+.upperNav {
+  width: 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: white 0.1px solid;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.fareBtn {
+  background-color: #1c75c0;
+  color: white;
+  width: 100px;
+  padding: 2%;
+  border-radius: 3%;
+  font-size: 10px;
+  text-align: center;
+}
+
+.upperNav > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.upperNav > div > a {
+  margin-right: 10px;
+}
+
+.navFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.thelinks {
+  width: 1px;
+}
+
+nav > div > div > a {
+  margin: 3px;
+  color: white;
+  text-decoration: no-underline;
 }
 
 .mainText {
@@ -185,6 +241,12 @@ body {
   grid-template-rows: 1fr 1fr;
 }
 
+.clientLogo {
+  background-image: url(./images/LOGO\ CHAT.png);
+  background-size: contain;
+  background-position: center;
+}
+
 .ourValues {
   background-color: white;
   display: grid;
@@ -275,8 +337,17 @@ body {
 }
 
 .recentPost > div {
-  border: red solid 1px;
   padding: 0.5%;
+}
+
+.postImage {
+  margin: 25px 5px 0px 0px;
+  background-image: url(./images/logistics2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 60px;
+  width: 60px;
 }
 
 .footerBottom {
@@ -347,10 +418,67 @@ body {
     color: white;
     font-size: large;
     height: 80vh;
-    padding-top: 30%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+  }
+
+  nav {
+    width: 100vw;
+    text-align: right;
+    border: 1px dotted blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-area: nav;
+    padding: 15px 30px;
+    margin-bottom: 20%;
+  }
+
+  .upperNav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: white 0.1px solid;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+
+  .fareBtn {
+    background-color: #1c75c0;
+    color: white;
+    width: 100px;
+    padding: 2%;
+    border-radius: 3%;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .upperNav > div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .upperNav > div > a {
+    margin-right: 10px;
+  }
+
+  .navFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .thelinks {
+    width: 100%;
+  }
+
+  nav > div > div > a {
+    margin: 3px;
+    color: white;
+    text-decoration: no-underline;
   }
 
   .mainText {
@@ -581,7 +709,6 @@ body {
   }
 
   .recentPost > div {
-    border: red solid 1px;
     padding: 0.5%;
   }
 

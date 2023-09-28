@@ -4,6 +4,35 @@ function App() {
   return (
     <div className="container">
       <div className="main">
+        <nav>
+          <div className="upperNav">
+            <div>
+              <a href="https://www.google.com"> Newsletter</a>
+              <a href="https://www.google.com"> Careers</a>
+            </div>
+            <div>
+              <a href="https://www.google.com"> f</a>
+              <a href="https://www.google.com"> t</a>
+              <a href="https://www.google.com"> g+</a>
+              <a href="https://www.google.com"> search</a>
+              <a href="https://www.google.com" className="fareBtn">
+                {" "}
+                GET A FARE RATE
+              </a>
+            </div>
+          </div>
+          <div className="navFlex">
+            <div>LOGO</div>
+            <div className="thelinks">
+              <a href="https://www.google.com">HOME</a>
+              <a href="https://www.google.com">PAGES</a>
+              <a href="https://www.google.com">SERVICES</a>
+              <a href="https://www.google.com">FLEETS</a>
+              <a href="https://www.google.com">NEWS</a>
+              <a href="https://www.google.com">CALCULATOR</a>
+            </div>
+          </div>
+        </nav>
         <div className="mainText">
           <h4>Welcome To</h4>
           <h1>Aduana Premium</h1>
@@ -101,12 +130,12 @@ function App() {
           <div className="clientCard"> Successful people....</div>
         </div>
         <div className="clientLogos">
-          <div>LOGO1</div>
-          <div>LOGO2</div>
-          <div>LOGO3</div>
-          <div>LOGO4</div>
-          <div>LOGO5</div>
-          <div>LOGO6</div>
+          <div className="clientLogo"></div>
+          <div className="clientLogo"></div>
+          <div className="clientLogo"></div>
+          <div className="clientLogo"></div>
+          <div className="clientLogo"></div>
+          <div className="clientLogo"></div>
         </div>
       </div>
       <div className="ourValues">
@@ -175,21 +204,21 @@ function App() {
           <div className="divLine"></div>
           <div>
             <div className="recentPost">
-              <div>Image</div>
+              <div className="postImage"></div>
               <div>
                 <h4>Liberalisation of Air Cargo Industry</h4>
                 <h6>October 9, 2023</h6>
               </div>
             </div>
             <div className="recentPost">
-              <div>Image</div>
+              <div className="postImage"></div>
               <div>
                 <h4>Liberalisation of Air Cargo Industry</h4>
                 <h6>October 9, 2023</h6>
               </div>
             </div>
             <div className="recentPost">
-              <div>Image</div>
+              <div className="postImage"></div>
               <div>
                 <h4>Liberalisation of Air Cargo Industry</h4>
                 <h6>October 9, 2023</h6>
