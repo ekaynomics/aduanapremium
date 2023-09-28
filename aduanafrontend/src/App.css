@@ -194,7 +194,7 @@ body {
 }
 
 .ourValues > div {
-  padding-left: 5%;
+  padding: 5%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -203,7 +203,7 @@ body {
 
 .valueTitle {
   font-size: 50px;
-  padding: 10px 0;
+  padding-bottom: 30px;
   margin: 0;
   color: #155794;
 }
@@ -216,7 +216,9 @@ body {
 }
 
 .cargoNumbers {
-  background-color: greenyellow;
+  background: url(./images/fast\ car\ dash.jpeg);
+  object-fit: cover;
+  color: white;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
@@ -231,7 +233,7 @@ body {
 }
 
 .map {
-  background-color: blueviolet;
+  background-color: #084274;
 }
 
 .footer {
@@ -239,17 +241,67 @@ body {
   color: white;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .footer > div {
-  padding: 5%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
+.footerHeader {
+  margin: 5% 5% 0 5%;
+  color: #1c75c0;
+}
+
+.divLine {
+  border-top: 3px white solid;
+  margin: 5%;
+  width: 40%;
+}
+
+.footer > div {
+  margin-left: 5%;
+  width: 80%;
+  padding-top: 3%;
+}
+
+.recentPost {
+  margin-left: 5%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr;
+}
+
+.recentPost > div {
+  border: red solid 1px;
+  padding: 0.5%;
+}
+
+.footerBottom {
+  background-color: #084274;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.copyrightDiv {
+  border-top: 0.5px white solid;
+  width: 100%;
+  margin-top: 5%;
+  padding-top: 2%;
+}
+
+.copyrightDiv > div {
+  padding-right: 5%;
+  margin-bottom: 2%;
+  color: white;
+}
+
 .contactFAQ {
+  padding: 5%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -257,6 +309,35 @@ body {
   padding: 20%;
 }
 
+.quickLinks {
+  margin: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.photoBox {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.photogallery {
+  background-image: url(./images/Logistics.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  margin-bottom: 5%;
+}
+
+.recentComment {
+  margin-left: 5%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
 @media (min-width: 800px) {
   .main {
     background-color: red;
@@ -429,11 +510,123 @@ body {
   }
 
   .valuesCard {
+    background-image: cover;
     margin: 10px;
     border-radius: 5px;
     width: 80%;
     height: 200px;
     border: 1px solid white;
     background-color: white;
+  }
+
+  .valuesPhoto {
+    background-image: url(./images/forklift.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .cargoNumbers {
+    background: url(./images/fast\ car\ dash.jpeg);
+    object-fit: cover;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 20px;
+  }
+
+  .cargoNumbers > div {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .footer {
+    background-color: #084274;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .footer > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .footerHeader {
+    margin: 5% 5% 0 5%;
+    color: #1c75c0;
+  }
+
+  .divLine {
+    border-top: 3px white solid;
+    margin: 5%;
+    width: 40%;
+  }
+
+  .footer > div {
+    margin-left: 5%;
+    width: 80%;
+    padding-top: 3%;
+  }
+
+  .recentPost {
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+  }
+
+  .recentPost > div {
+    border: red solid 1px;
+    padding: 0.5%;
+  }
+
+  .footerBottom {
+    background-color: #084274;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+
+  .copyrightDiv {
+    border-top: 0.5px white solid;
+    width: 100%;
+    margin-top: 5%;
+    padding-top: 2%;
+  }
+
+  .copyrightDiv > div {
+    padding-right: 5%;
+    margin-bottom: 2%;
+    color: white;
+  }
+
+  .contactFAQ {
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20%;
+  }
+
+  .photoBox {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .photogallery {
+    background-image: url(./images/Logistics.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 130px;
+    margin-bottom: 5%;
   }
 }

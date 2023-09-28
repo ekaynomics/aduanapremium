@@ -118,7 +118,7 @@ function App() {
           <div className="valuesCard">
             <p>Values PARAGRAPH</p>
           </div>
-          <div className="valuesCard">VALUES PHOTOGRAPH</div>
+          <div className="valuesCard valuesPhoto"></div>
         </div>
         <div className="valuesBottomDiv">
           <div className="valuesStatsCard">
@@ -159,21 +159,103 @@ function App() {
         </div>
       </div>
       <div className="map">
-        <p>Place map here</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15884.339648911175!2d-0.2210877317121349!3d5.5544305711237785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9099050ee617%3A0xec1887b5b7a1893d!2sMovenpick%20Ambassador%20Hotel%20Accra!5e0!3m2!1sen!2sgh!4v1695801926461!5m2!1sen!2sgh"
+          width="100%"
+          height="450"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="magic"
+        ></iframe>
       </div>
       <div className="footer">
-        <div>RECENT POSTS</div>
-        <div>PHOTOGALLERY</div>
-        <div>RECENT COMMENTS</div>
         <div>
-          <h2>QUICK LINKS</h2>
-          <div></div>
+          <h2 className="footerHeader">RECENT POSTS</h2>
+          <div className="divLine"></div>
+          <div>
+            <div className="recentPost">
+              <div>Image</div>
+              <div>
+                <h4>Liberalisation of Air Cargo Industry</h4>
+                <h6>October 9, 2023</h6>
+              </div>
+            </div>
+            <div className="recentPost">
+              <div>Image</div>
+              <div>
+                <h4>Liberalisation of Air Cargo Industry</h4>
+                <h6>October 9, 2023</h6>
+              </div>
+            </div>
+            <div className="recentPost">
+              <div>Image</div>
+              <div>
+                <h4>Liberalisation of Air Cargo Industry</h4>
+                <h6>October 9, 2023</h6>
+              </div>
+            </div>
+          </div>
         </div>
         <div>
+          <h2 className="footerHeader">PHOTOGALLERY</h2>
+          <div className="divLine"></div>
+          <div className="photoBox">
+            <div className="photogallery"></div>
+            <div className="photogallery"></div>
+            <div className="photogallery"></div>
+          </div>
+        </div>
+        <div>
+          <h2 className="footerHeader">RECENT COMMENTS</h2>
+          <div className="divLine"></div>
+          <div>
+            <div className="recentComment">
+              <div>
+                <p>New trucks arriving </p>
+                <p>October 9, 2023 - By admin</p>
+              </div>
+            </div>
+          </div>
+          <div className="recentComment">
+            <div>
+              <p>New trucks arriving </p>
+              <p>October 9, 2023 - By admin</p>
+            </div>
+          </div>
+          <div className="recentComment">
+            <div>
+              <p>New trucks arriving </p>
+              <p>October 9, 2023 - By admin</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 className="footerHeader">QUICK LINKS</h2>
+          <div className="divLine"></div>
+          <div className="quickLinks">
+            <div>
+              <h6>Ocean Cargo</h6>
+              <h6>Courier</h6>
+              <h6>Cost Calculators</h6>
+              <h6>Courier Calculator</h6>
+              <h6>Air Cargo Calculator</h6>
+              <h6>FAQs</h6>
+            </div>
+            <div>
+              <h6>Air Cargo</h6>
+              <h6>Trucking</h6>
+              <h6>Trucking Calculator</h6>
+              <h6>Ocean Cargo Calc</h6>
+              <h6>Pricing</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="footerBottom">
+        <div className="copyrightDiv">
           <div>Copyright by E K Brand Consult Ltd. All Rights Reserved</div>
-        </div>
-        <div className="contactFAQ">
-          <p>Contact | FAQ</p>
+          <div>Contact | FAQ</div>
         </div>
       </div>
     </div>
